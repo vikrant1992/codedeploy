@@ -3,8 +3,10 @@ os: linux
 
 files:
   - source: ./
-    destination: /var/www/html
+    destination: /home/ec2-user/
     overwrite: yes
+  - source: ./index.html
+    destination: /var/www/html
 
 hooks:
   BeforeInstall:

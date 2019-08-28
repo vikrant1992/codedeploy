@@ -1,4 +1,6 @@
 #!/bin/bash
 # stoping apache
-rm -rf /var/www/html/*
+if [-f /var/www/html/index.html]
+then rm -rf /var/www/html/index.html
+fi
 service httpd stop
