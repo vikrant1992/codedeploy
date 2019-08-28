@@ -2,9 +2,6 @@ version: 0.0
 os: linux
 
 files:
-  - source: ./
-    destination: /home/ec2-user/
-    overwrite: yes
   - source: ./index.html
     destination: /var/www/html
 
